@@ -27,6 +27,7 @@ build_app:
   type: build
   script: 
    - make build
+   - make test
    - make clean
 
 deploy_app:
