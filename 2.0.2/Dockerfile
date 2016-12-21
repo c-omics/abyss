@@ -18,6 +18,7 @@ RUN yum install -y autoconf \
                    automake \
                    boost-devel \
                    sparsehash-devel ; \
+    yum clean all ; \
     git clone $GIT ; \
     cd $APP_NAME ; \
     git checkout tags/$VERSION ; \
